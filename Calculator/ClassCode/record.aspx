@@ -5,7 +5,9 @@
 
 
     <div id="calculator">
-    <asp:Button ID="btnRecord" CssClass="btn btn-danger" runat="server" Text="Historial" OnClick="btnRecord_Click" />
+    <asp:Button ID="btnRecord" CssClass="btn btn-success" runat="server" Text="Historial" OnClick="btnRecord_Click" />
+    <asp:Button ID="btnDelete" CssClass="btn btn-danger" runat="server" Text="Borrar" OnClick="btnDelete_Click" Enabled="False" />
+
     <br />
     <asp:Label ID="lblRecord"  runat="server" Height="40px" Width="300px" Text=""></asp:Label>
     </div>

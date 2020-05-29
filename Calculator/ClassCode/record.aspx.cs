@@ -22,7 +22,14 @@ namespace Calculator.ClassCode
         {
             if (Session["Record"] != null)
                 lblRecord.Text = Session["Record"].ToString();
+                btnDelete.Enabled = true;
 
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            lblRecord.Text = string.Empty;
+            Session["Record"] = string.Empty;
         }
     }
 }

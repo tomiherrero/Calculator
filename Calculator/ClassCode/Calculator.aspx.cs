@@ -33,26 +33,26 @@ namespace Calculator.ClassCode
 
                 lblResult.Text = (number1 + number2).ToString();
                 var bill = number1.ToString() + " + " + number2.ToString() + " = " + lblResult.Text.ToString();
-                Session.Add("Record", bill + " " + Session["Record"]);
+                Session.Add("Record", bill + ", " + Session["Record"]);
             }
             if (rdoSubtraction.Checked == true)
             {
                 lblResult.Text = (number1 - number2).ToString();
                 var bill = number1.ToString() + " - " + number2.ToString() + " = " + lblResult.Text.ToString();
-                Session.Add("Record", bill + " " + Session["Record"]);
+                Session.Add("Record", bill + ", " + Session["Record"]);
             }
             if (rdoMultiply.Checked == true)
             {
                 lblResult.Text = (number1 * number2).ToString();
                 var bill = number1.ToString() + " * " + number2.ToString() + " = " + lblResult.Text.ToString();
-                Session.Add("Record", bill + " " + Session["Record"]);
+                Session.Add("Record", bill + ", " + Session["Record"]);
 
             }
             if (rdoDivide.Checked == true)
             {
                 lblResult.Text = (number1 / number2).ToString();
                 var bill = number1.ToString() + " / " + number2.ToString() + " = " + lblResult.Text.ToString();
-                Session.Add("Record", bill + " " + Session["Record"]);
+                Session.Add("Record", bill + ", " + Session["Record"]);
             }
         }
 
