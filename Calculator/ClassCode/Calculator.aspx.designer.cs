@@ -87,6 +87,15 @@ namespace Calculator.ClassCode
         protected global::System.Web.UI.WebControls.TextBox txtNumber2;
 
         /// <summary>
+        /// Control lblDivide0.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDivide0;
+
+        /// <summary>
         /// Control lblResult.
         /// </summary>
         /// <remarks>

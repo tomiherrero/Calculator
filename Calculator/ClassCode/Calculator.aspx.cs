@@ -48,7 +48,11 @@ namespace Calculator.ClassCode
                 Session.Add("Record", bill + ", " + Session["Record"]);
 
             }
-            if (rdoDivide.Checked == true)
+            if (rdoDivide.Checked == true && txtNumber2.Text == "0")
+            {
+                lblDivide0.Visible = true;
+            }
+            else 
             {
                 lblResult.Text = (number1 / number2).ToString();
                 var bill = number1.ToString() + " / " + number2.ToString() + " = " + lblResult.Text.ToString();
@@ -72,7 +76,6 @@ namespace Calculator.ClassCode
             {
                lblNumberObligatory2.Visible = true;
             }
-           
             else
             {
                 calculator();
@@ -87,6 +90,7 @@ namespace Calculator.ClassCode
             lblResult.Text = string.Empty;
             lblNumberObligatory1.Visible = false;
             lblNumberObligatory2.Visible = false;
+            lblDivide0.Visible = false;
         }
 
         protected void txtNumber1_TextChanged(object sender, EventArgs e)

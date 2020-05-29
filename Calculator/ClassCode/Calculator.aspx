@@ -13,10 +13,13 @@
     <br />
 
     <asp:Label ID="lblNumberObligatory1" runat="server" Text="*Campo Obligatorio" Visible="False" ></asp:Label>
-    <asp:TextBox ID="txtNumber1" CssClass="form-control" runat="server" Height="40px" Width="300px" onkeypress="if (isNaN(String.fromCharCode(event.keyCode))) return false;" OnTextChanged="txtNumber1_TextChanged" ></asp:TextBox>
+    <asp:TextBox ID="txtNumber1" CssClass="form-control" runat="server" Height="40px" Width="300px" onkeypress="if (isNaN(String.fromCharCode(event.keyCode))) return false;" OnTextChanged="txtNumber1_TextChanged" TextMode="Number" ></asp:TextBox>
     <br />
     <asp:Label ID="lblNumberObligatory2" runat="server" Text="*Campo Obligatorio" Visible="False"></asp:Label>
-    <asp:TextBox ID="txtNumber2" CssClass="form-control" runat="server" Height="40px" Width="300px" onkeypress="if (isNaN(String.fromCharCode(event.keyCode))) return false;" OnTextChanged="txtNumber2_TextChanged" ></asp:TextBox>
+    <asp:TextBox ID="txtNumber2" CssClass="form-control" runat="server" Height="40px" Width="300px" onkeypress="if (isNaN(String.fromCharCode(event.keyCode))) return false;" OnTextChanged="txtNumber2_TextChanged" TextMode="Number" ></asp:TextBox>
+    <asp:Label ID="lblDivide0" runat="server" Text="*No se puede dividir por 0" Visible="False"></asp:Label>
+    
+    
     <br />
     <br />
 
